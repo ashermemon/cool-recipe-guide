@@ -4,112 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Cool Recipe Guide</h1>
-    <p>
-      Scroll through some recipes and pick one to follow the recipe!! Bon
-      Appetite!
-    </p>
+    <section class="recipe-header">
+      <h1>Cool Recipe Guide</h1>
+      <p>
+        Scroll through some recipes and pick one to follow the recipe!! Bon
+      </p>
+    </section>
     <section>
       <h2>Recipe Directory</h2>
-    </section>
 
-    <table>
-      <tr>
-        <td>
-          <a
-            href="recipes/lasagna.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Tasty Lasagna</h3>
-            <p>A delicious quick & easy lasagna dish!</p>
-            <img
-              src="./images/lasagna.jpg"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-        <td>
-          <a
-            href="recipes/cinnamonroll.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Cinnamon Rolls</h3>
-            <p>A freshly baked sweet snack fit to crave for!</p>
-            <img
-              src="./images/cinnamonroll.webp"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-        <td>
-          <a
-            href="recipes/mac.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Mac and Cheese</h3>
-            <p>Cheesy pasta that will burn your mouth on first bite</p>
-            <img
-              src="./images/mac.jpg"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a
-            href="recipes/cinnamonroll.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Cinnamon Rolls</h3>
-            <p>A freshly baked sweet snack fit to crave for!</p>
-            <img
-              src="./images/cinnamonroll.webp"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-        <td>
-          <a
-            href="recipes/cinnamonroll.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Cinnamon Rolls</h3>
-            <p>A freshly baked sweet snack fit to crave for!</p>
-            <img
-              src="./images/cinnamonroll.webp"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-        <td>
-          <a
-            href="recipes/cinnamonroll.html"
-            style="text-decoration: none; color: inherit"
-          >
-            <h3>Cinnamon Rolls</h3>
-            <p>A freshly baked sweet snack fit to crave for!</p>
-            <img
-              src="./images/cinnamonroll.webp"
-              alt="tasty lasagna"
-              width="300"
-              height="auto"
-            />
-          </a>
-        </td>
-      </tr>
-    </table>
+      <table class="home-grid">
+        <tr>
+          <td>
+            <a
+              href="recipes/lasagna.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Tasty Lasagna</h3>
+              <p>A delicious quick & easy lasagna dish!</p>
+              <div style="display: flex">
+                <h2 id="featured-recipe-text">FEATURED</h2>
+                <img
+                  id="featured-recipe"
+                  src="./images/lasagna.jpg"
+                  alt="tasty lasagna"
+                  width="300"
+                  height="auto"
+                />
+              </div>
+            </a>
+          </td>
+          <td>
+            <a
+              href="recipes/cinnamonroll.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Cinnamon Rolls</h3>
+              <p>A freshly baked sweet snack to crave for!</p>
+              <img
+                src="./images/cinnamonroll.webp"
+                alt="tasty lasagna"
+                width="300"
+                height="auto"
+              />
+            </a>
+          </td>
+          <td>
+            <a
+              href="recipes/mac.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Mac and Cheese</h3>
+              <p>Cheesy pasta that will burn your mouth on first bite</p>
+              <img
+                src="./images/mac.jpg"
+                alt="tasty lasagna"
+                width="300"
+                height="auto"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a
+              href="recipes/cake.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Rich Chocolate Cake</h3>
+              <p>A simple and easy choco cake</p>
+              <img
+                src="./images/cake.jpeg"
+                alt="tasty lasagna"
+                width="300"
+                height="auto"
+              />
+            </a>
+          </td>
+          <td>
+            <a
+              href="recipes/cinnamonroll.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Cinnamon Rolls</h3>
+              <p>A freshly baked sweet snack to crave for!</p>
+              <img
+                src="./images/cinnamonroll.webp"
+                alt="tasty lasagna"
+                width="300"
+                height="auto"
+              />
+            </a>
+          </td>
+          <td>
+            <a
+              href="recipes/cinnamonroll.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Cinnamon Rolls</h3>
+              <p>A freshly baked sweet snack to crave for!</p>
+              <img
+                src="./images/cinnamonroll.webp"
+                alt="tasty lasagna"
+                width="300"
+                height="auto"
+              />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </section>
   </body>
 </html>
