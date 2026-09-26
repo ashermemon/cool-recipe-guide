@@ -3,28 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Cool Recipe Guide</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <ul class="navbar">
+      <li class="active"><a href="/index.html">Home</a></li>
+      <li><a href="/recipes/lasagna.html">Lasagna</a></li>
+      <li><a href="/recipes/cinnamonroll.html">Cinnamon Rolls</a></li>
+      <li><a href="/recipes/mac.html">Mac and Cheese</a></li>
+      <li><a href="/recipes/cake.html">Chocolate Cake</a></li>
+      <li><a href="/recipes/pie.html">Apple Pie</a></li>
+      <li id="right-align">
+        <a href="#" id="random-recipe-btn">Random Recipe</a>
+      </li>
+    </ul>
     <section class="recipe-header">
       <h1>Cool Recipe Guide</h1>
       <p>
         Scroll through some recipes and pick one to follow the recipe!! Bon
+        Appetit!
       </p>
     </section>
     <section>
       <h2>Recipe Directory</h2>
 
-      <table class="home-grid">
-        <tr>
-          <td>
+      <div class="home-grid">
+        <div class="row">
+          <div>
             <a
               href="recipes/lasagna.html"
               style="text-decoration: none; color: inherit"
             >
               <h3>Tasty Lasagna</h3>
-              <p>A delicious quick & easy lasagna dish!</p>
+              <p class="p-with-margin">
+                A delicious quick & easy lasagna dish!
+              </p>
               <div style="display: flex">
                 <h2 id="featured-recipe-text">FEATURED</h2>
                 <img
@@ -36,14 +50,16 @@
                 />
               </div>
             </a>
-          </td>
-          <td>
+          </div>
+          <div>
             <a
               href="recipes/cinnamonroll.html"
               style="text-decoration: none; color: inherit"
             >
               <h3>Cinnamon Rolls</h3>
-              <p>A freshly baked sweet snack to crave for!</p>
+              <p class="p-with-margin">
+                A freshly baked sweet snack to crave for!
+              </p>
               <img
                 src="./images/cinnamonroll.webp"
                 alt="tasty lasagna"
@@ -51,14 +67,16 @@
                 height="auto"
               />
             </a>
-          </td>
-          <td>
+          </div>
+          <div>
             <a
               href="recipes/mac.html"
               style="text-decoration: none; color: inherit"
             >
               <h3>Mac and Cheese</h3>
-              <p>Cheesy pasta that will burn your mouth on first bite</p>
+              <p class="p-with-margin">
+                Creamy, cheesy pasta made from scratch!
+              </p>
               <img
                 src="./images/mac.jpg"
                 alt="tasty lasagna"
@@ -66,16 +84,16 @@
                 height="auto"
               />
             </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </div>
+        </div>
+        <div class="row">
+          <div>
             <a
               href="recipes/cake.html"
               style="text-decoration: none; color: inherit"
             >
               <h3>Rich Chocolate Cake</h3>
-              <p>A simple and easy choco cake</p>
+              <p class="p-with-margin">A simple and easy chocolate cake</p>
               <img
                 src="./images/cake.jpeg"
                 alt="tasty lasagna"
@@ -83,39 +101,48 @@
                 height="auto"
               />
             </a>
-          </td>
-          <td>
+          </div>
+          <div>
             <a
-              href="recipes/cinnamonroll.html"
+              href="recipes/froggy.html"
               style="text-decoration: none; color: inherit"
             >
-              <h3>Cinnamon Rolls</h3>
-              <p>A freshly baked sweet snack to crave for!</p>
+              <h3>Flexbox Froggy</h3>
+              <p class="p-with-margin">Freshly Roasted Flexbox FROGGIES</p>
               <img
-                src="./images/cinnamonroll.webp"
+                src="./images/froggy.png"
                 alt="tasty lasagna"
                 width="300"
                 height="auto"
               />
             </a>
-          </td>
-          <td>
+          </div>
+          <div>
             <a
-              href="recipes/cinnamonroll.html"
+              href="recipes/pie.html"
               style="text-decoration: none; color: inherit"
             >
-              <h3>Cinnamon Rolls</h3>
-              <p>A freshly baked sweet snack to crave for!</p>
+              <h3>Apple Pie</h3>
+              <p class="p-with-margin">
+                Classic homemade apple pie with a spiced filling
+              </p>
               <img
-                src="./images/cinnamonroll.webp"
-                alt="tasty lasagna"
+                src="./images/pie.jpeg"
+                alt="Homemade apple pie"
                 width="300"
                 height="auto"
               />
             </a>
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+      </div>
     </section>
+    <footer class="footer">
+      <p>
+        Cool Recipe Guide is property of and trademarked under Flexbox Froggy
+        Industries
+      </p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

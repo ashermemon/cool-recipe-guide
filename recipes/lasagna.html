@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Lasagna Recipe</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="nested-page">
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li class="active"><a href="/recipes/lasagna.html">Lasagna</a></li>
+      <li><a href="/recipes/cinnamonroll.html">Cinnamon Rolls</a></li>
+      <li><a href="/recipes/mac.html">Mac and Cheese</a></li>
+      <li><a href="/recipes/cake.html">Chocolate Cake</a></li>
+      <li><a href="/recipes/pie.html">Apple Pie</a></li>
+      <li id="right-align">
+        <a href="#" id="random-recipe-btn">Random Recipe</a>
+      </li>
+    </ul>
     <section>
       <h1>Amazing Lasagna Recipe</h1>
       <img
@@ -15,19 +26,43 @@
         width="300"
         height="auto"
       />
-      <p>Description</p>
+      <p>
+        A classic, cheesy baked lasagna layered with meat sauce and noodles.
+      </p>
       <h2>Ingredients</h2>
       <ul>
-        <li>Pre-Made Lasagna</li>
-        <li>Salt</li>
+        <li>Lasagna noodles</li>
+        <li>Ground beef</li>
+        <li>Marinara sauce</li>
+        <li>Ricotta cheese</li>
+        <li>Mozzarella cheese</li>
+        <li>Parmesan cheese</li>
+        <li>1 egg</li>
+        <li>Salt and pepper</li>
       </ul>
       <h2>Steps</h2>
       <ol>
-        <li>Collect Ingredients</li>
-        <li>Sprinkle salt overtop of pre-made lasagna</li>
-        <li>Your dish is ready to enjoy</li>
+        <li>Preheat oven to 375°F (190°C).</li>
+        <li>Cook lasagna noodles according to package instructions.</li>
+        <li>
+          Brown ground beef and mix with marinara sauce, salt, and pepper.
+        </li>
+        <li>Mix ricotta cheese with the egg.</li>
+        <li>
+          Layer noodles, meat sauce, ricotta mixture, and mozzarella in a baking
+          dish, repeating until ingredients are used up.
+        </li>
+        <li>Top with parmesan cheese and cover with foil.</li>
+        <li>
+          Bake for 25 minutes, then uncover and bake 10 more minutes until
+          golden.
+        </li>
+        <li>Let cool for 10 minutes, then serve and enjoy!</li>
       </ol>
-      <button onclick="location.href = '../index.html'">Go Back</button>
+      <button class="back-btn" onclick="location.href = '../index.html'">
+        Go Back
+      </button>
     </section>
+    <script src="../script.js"></script>
   </body>
 </html>

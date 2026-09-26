@@ -3,10 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Cinnamon Roll Recipe</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="nested-page">
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/recipes/lasagna.html">Lasagna</a></li>
+      <li class="active">
+        <a href="/recipes/cinnamonroll.html">Cinnamon Rolls</a>
+      </li>
+      <li><a href="/recipes/mac.html">Mac and Cheese</a></li>
+      <li><a href="/recipes/cake.html">Chocolate Cake</a></li>
+      <li><a href="/recipes/pie.html">Apple Pie</a></li>
+      <li id="right-align">
+        <a href="#" id="random-recipe-btn">Random Recipe</a>
+      </li>
+    </ul>
     <section>
       <h1>Sweet Cinnamon Rolls</h1>
       <img
@@ -15,19 +28,36 @@
         width="300"
         height="auto"
       />
-      <p>Description</p>
+      <p>Soft, gooey cinnamon rolls topped with a sweet cream cheese glaze.</p>
       <h2>Ingredients</h2>
       <ul>
-        <li>Pre-Made Lasagna</li>
-        <li>Salt</li>
+        <li>Pizza dough or crescent dough</li>
+        <li>Butter, softened</li>
+        <li>Brown sugar</li>
+        <li>Cinnamon</li>
+        <li>Cream cheese</li>
+        <li>Powdered sugar</li>
+        <li>Splash of milk</li>
       </ul>
       <h2>Steps</h2>
       <ol>
-        <li>Collect Ingredients</li>
-        <li>Sprinkle salt overtop of pre-made lasagna</li>
-        <li>Your dish is ready to enjoy</li>
+        <li>Preheat oven to 375°F (190°C).</li>
+        <li>Roll out dough into a flat rectangle.</li>
+        <li>Spread softened butter over the dough.</li>
+        <li>
+          Mix brown sugar and cinnamon, then sprinkle evenly over the butter.
+        </li>
+        <li>Roll the dough up tightly and slice into rolls.</li>
+        <li>
+          Place rolls in a baking dish and bake for 15-20 minutes until golden.
+        </li>
+        <li>Mix cream cheese, powdered sugar, and milk to make the glaze.</li>
+        <li>Drizzle glaze over warm rolls and enjoy!</li>
       </ol>
-      <button onclick="location.href = '../index.html'">Go Back</button>
+      <button class="back-btn" onclick="location.href = '../index.html'">
+        Go Back
+      </button>
     </section>
+    <script src="../script.js"></script>
   </body>
 </html>

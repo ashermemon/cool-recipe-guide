@@ -3,31 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Chocolate Cake Recipe</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="nested-page">
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/recipes/lasagna.html">Lasagna</a></li>
+      <li><a href="/recipes/cinnamonroll.html">Cinnamon Rolls</a></li>
+      <li><a href="/recipes/mac.html">Mac and Cheese</a></li>
+      <li class="active"><a href="/recipes/cake.html">Chocolate Cake</a></li>
+      <li><a href="/recipes/pie.html">Apple Pie</a></li>
+      <li id="right-align">
+        <a href="#" id="random-recipe-btn">Random Recipe</a>
+      </li>
+    </ul>
     <section>
       <h1>Rich Chocolate Cake</h1>
       <img
         src="../images/cake.jpeg"
-        alt="Mac and Cheese"
+        alt="Rich Chocolate Cake"
         width="300"
         height="auto"
       />
-      <p>Description</p>
+      <p>A moist, rich chocolate cake with a smooth chocolate frosting.</p>
       <h2>Ingredients</h2>
       <ul>
-        <li>Pre-Made Lasagna</li>
-        <li>Salt</li>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Cocoa powder</li>
+        <li>Baking soda</li>
+        <li>Eggs</li>
+        <li>Milk</li>
+        <li>Vegetable oil</li>
+        <li>Chocolate frosting</li>
       </ul>
       <h2>Steps</h2>
       <ol>
-        <li>Collect Ingredients</li>
-        <li>Sprinkle salt overtop of pre-made lasagna</li>
-        <li>Your dish is ready to enjoy</li>
+        <li>Preheat oven to 350°F (175°C) and grease a cake pan.</li>
+        <li>Mix flour, sugar, cocoa powder, and baking soda in a bowl.</li>
+        <li>Add eggs, milk, and vegetable oil, then mix until smooth.</li>
+        <li>Pour batter into the cake pan.</li>
+        <li>Bake for 30-35 minutes until a toothpick comes out clean.</li>
+        <li>Let the cake cool completely.</li>
+        <li>Spread chocolate frosting over the top.</li>
+        <li>Slice and enjoy!</li>
       </ol>
-      <button onclick="location.href = '../index.html'">Go Back</button>
+      <button class="back-btn" onclick="location.href = '../index.html'">
+        Go Back
+      </button>
     </section>
+    <script src="../script.js"></script>
   </body>
 </html>

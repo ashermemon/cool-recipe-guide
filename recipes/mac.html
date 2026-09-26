@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Document</title>
+    <title>Mac and Cheese Recipe</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="nested-page">
+    <ul class="navbar">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/recipes/lasagna.html">Lasagna</a></li>
+      <li><a href="/recipes/cinnamonroll.html">Cinnamon Rolls</a></li>
+      <li class="active"><a href="/recipes/mac.html">Mac and Cheese</a></li>
+      <li><a href="/recipes/cake.html">Chocolate Cake</a></li>
+      <li><a href="/recipes/pie.html">Apple Pie</a></li>
+      <li id="right-align">
+        <a href="#" id="random-recipe-btn">Random Recipe</a>
+      </li>
+    </ul>
     <section>
       <h1>Mac and Cheese</h1>
       <img
@@ -15,19 +26,31 @@
         width="300"
         height="auto"
       />
-      <p>Description</p>
+      <p>Creamy, cheesy stovetop mac and cheese made from scratch.</p>
       <h2>Ingredients</h2>
       <ul>
-        <li>Pre-Made Lasagna</li>
-        <li>Salt</li>
+        <li>Elbow macaroni</li>
+        <li>Butter</li>
+        <li>Flour</li>
+        <li>Milk</li>
+        <li>Cheddar cheese, shredded</li>
+        <li>Salt and pepper</li>
       </ul>
       <h2>Steps</h2>
       <ol>
-        <li>Collect Ingredients</li>
-        <li>Sprinkle salt overtop of pre-made lasagna</li>
-        <li>Your dish is ready to enjoy</li>
+        <li>Boil macaroni according to package instructions, then drain.</li>
+        <li>Melt butter in a pot over medium heat.</li>
+        <li>Whisk in flour and cook for 1 minute to form a roux.</li>
+        <li>Slowly whisk in milk until smooth, then simmer until thickened.</li>
+        <li>Stir in shredded cheese until melted and smooth.</li>
+        <li>Season with salt and pepper.</li>
+        <li>Add macaroni to the cheese sauce and stir to coat.</li>
+        <li>Serve warm and enjoy!</li>
       </ol>
-      <button onclick="location.href = '../index.html'">Go Back</button>
+      <button class="back-btn" onclick="location.href = '../index.html'">
+        Go Back
+      </button>
     </section>
+    <script src="../script.js"></script>
   </body>
 </html>

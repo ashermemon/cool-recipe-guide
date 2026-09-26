@@ -1,9 +1,16 @@
-* {
+html {
+  /* border box reset thing*/
+  box-sizing: border-box;
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 html,
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -54,16 +61,39 @@ p {
   font-weight: 500;
 }
 
-.home-grid td {
-  background-color: linen;
+.home-grid .row {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.home-grid .row > div {
+  flex: 1;
+  min-width: 0;
+
+  background: repeating-linear-gradient(
+    0deg,
+    linen,
+    linen 30px,
+    #f8e4d5 30px,
+    #f8e4d5 32px
+  );
   padding: 20px 30px 40px 30px;
-  vertical-align: top;
-  border: solid 3px #846c5b;
+}
+
+.home-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .home-grid {
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-radius: 5px;
   width: 100%;
-  border-radius: 100px;
+  background-color: #846c5b;
+  border: solid 3px #846c5b;
 }
 
 ul,
@@ -83,6 +113,8 @@ a img {
 }
 
 img {
+  max-width: 80%;
+  height: auto;
   border: solid 3px grey;
   border-radius: 10px;
 }
@@ -90,15 +122,28 @@ img {
   border: solid 3px #e8bc87;
 }
 button {
+  cursor: pointer;
+}
+.back-btn {
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 15px;
+  height: 40px;
   border: solid 2px rgb(195, 156, 104);
   background-color: rgb(234, 204, 164);
-  border-radius: 5px;
+}
+ul li,
+ol li {
+  margin-bottom: 12px;
 }
 
 .recipe-header {
   background-color: #dcf4ce;
   border: solid 4px seagreen;
   padding: 5px 20px;
+  border-radius: 5px;
+  background-image: radial-gradient(#d1efc0 4px, transparent 0px);
+  background-size: 20px 20px;
 }
 
 #featured-recipe {
@@ -111,4 +156,51 @@ button {
   margin: 0 30px 0 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0 10 0 0;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #577590;
+  border: solid 4px #405b72;
+}
+
+.navbar li {
+  float: left;
+  margin-bottom: auto;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+#right-align {
+  float: right;
+  background-color: #cd9629;
+}
+
+.footer {
+  background-color: rgb(235, 240, 219);
+  border: 3px solid olive;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.footer p {
+  color: darkolivegreen;
+  font-size: 1.2em;
+}
+.p-with-margin {
+  margin-bottom: 25px;
+}
+
+.active {
+  background-color: #6a88a2;
 }
