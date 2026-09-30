@@ -25,14 +25,81 @@ body {
   font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-body.nested-page {
+#lasagnabg {
   background: repeating-linear-gradient(
-    45deg,
+    135deg,
+    #fff7e0,
+    #fff7e0 30px,
+    #ffedc3 30px,
+    #ffedc3 60px
+  );
+}
+
+#cinnamonbg {
+  background: repeating-radial-gradient(
+    circle at 50%,
     #fffdf6,
     #fffdf6 30px,
     #fff2e8 30px,
     #fff2e8 60px
   );
+}
+#macbg {
+  background: repeating-radial-gradient(
+    circle at bottom right,
+    #fffaf5,
+    #ffeddb 70px
+  );
+}
+#cakebg {
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 10px,
+      transparent 10px,
+      transparent 100px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(312, 0%, 63%, 0.05) 0px,
+      hsla(312, 0%, 63%, 0.05) 50px,
+      transparent 50px,
+      transparent 100px
+    ),
+    linear-gradient(90deg, hsl(80, 0%, 20%), hsl(80, 0%, 20%));
+}
+#cakebg p,
+#cakebg h1,
+#cakebg h2,
+#cakebg h3,
+#cakebg h4,
+#cakebg h5,
+#cakebg li {
+  color: white !important;
+}
+#piebg {
+  background-color: #fffdf9;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(196, 58, 45, 0.18) 0px,
+      rgba(196, 58, 45, 0.18) 20px,
+      transparent 20px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(196, 58, 45, 0.18) 0px,
+      rgba(196, 58, 45, 0.18) 20px,
+      transparent 20px,
+      transparent 40px
+    );
+}
+#froggy {
+  background-color: #dcf4ce;
+  background-image: radial-gradient(#d1efc0 8px, transparent 0px);
+  background-size: 30px 30px;
 }
 
 h1,
@@ -159,18 +226,13 @@ ol li {
 }
 
 .navbar {
+  display: flex;
   list-style-type: none;
-  margin: 0 10 0 0;
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
   background-color: #577590;
   border: solid 4px #405b72;
-}
-
-.navbar li {
-  float: left;
-  margin-bottom: auto;
 }
 
 .navbar li a {
@@ -180,15 +242,18 @@ ol li {
   padding: 20px 20px;
   text-decoration: none;
 }
+.navbar li {
+  margin: 0px;
+}
 #right-align {
-  float: right;
+  margin-left: auto;
   background-color: #cd9629;
 }
 
 .footer {
   background-color: rgb(235, 240, 219);
   border: 3px solid olive;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 5px 20px;
   border-radius: 5px;
 }
