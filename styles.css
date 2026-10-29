@@ -96,9 +96,9 @@ body {
       transparent 40px
     );
 }
-#froggy {
-  background-color: #dcf4ce;
-  background-image: radial-gradient(#d1efc0 8px, transparent 0px);
+#soupbg {
+  background-color: #fffbea;
+  background-image: radial-gradient(#fbecb8 8px, transparent 0px);
   background-size: 30px 30px;
 }
 

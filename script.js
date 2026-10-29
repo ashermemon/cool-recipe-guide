@@ -3,7 +3,7 @@ const recipePages = [
   "/recipes/cinnamonroll.html",
   "/recipes/mac.html",
   "/recipes/cake.html",
-  "/recipes/froggy.html",
+  "/recipes/soup.html",
   "/recipes/pie.html",
 ];
 
